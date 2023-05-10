@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --white:#fff;
+    --orange:#FF6D60;
+    --yellow:#F7D060;
+    --lightyellow:#F3E99F;
+    --green:#98D8AA;
+}
+
+body, h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image: url(Images/pizza-2589575.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--white);
+    
+}
+header{
+    display: flex;
+    padding: 1em;
+}
+
+#logo{
+    flex: 1;
+    font-size: 1.25em;
+}
+nav{
+    flex: 1;
+    display: flex;
+    
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: #FF6D60;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2em;
+
+}
+.maintext.tagline1:hover{
+    
+}
+.tagline1{
+    color: var(--yellow);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline1:hover{
+    color: #FF6D60;
+    font-size: 2em;
+
+}
+i:hover{
+    font-size: 2em;
+}
+.tagline2{
+    color: var(--lightyellow);
+}
+.maintext div{
+    margin-top: .75em;
+}
+
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 15px;
+    height: 2.5em;
+    background-color:  #22e9aa;
+    color: var(--white);
+    
+
+}
+button{
+    animation: mymove 3s infinite;
+}
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-image: linear-gradient(90deg, rgba(255,147,0,1) 7%, rgba(255,186,0,1) 86%);
+    color: var(--white);
+
+}
+#menuheading, #locheading{
+    background: linear-gradient(90deg, rgba(255,147,0,1) 7%, rgba(255,186,0,1) 86%);
+    font-size: 2em;
+    color: #4F200D;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.cup img{
+    display: block;
+    margin: auto;
+    width: 20%;
+    rotate: 20deg;
+    justify-content: right;
+    align-items: right;
+    float: right;
+
+}
+.menu th{
+    color: #395144;
+    font-size: 1.5em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.Locations{
+    background: linear-gradient(90deg, rgba(255,147,0,1) 7%, rgba(255,186,0,1) 86%);
+    color: var(--white);
+    display: flex;
+    
+}
+.Locations h2{
+    color:   #1c2833;
+    margin-bottom: .8em;
+
+
+}
+.Locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 120px;
+
+}
+footer{
+    background: linear-gradient(90deg, rgba(255,147,0,1) 7%, rgba(255,186,0,1) 86%);
+    color: #fff;
+    padding: .25em 1em;
+    text-align: center;
+
+}
